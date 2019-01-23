@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Сергей Зуев](https://up.htmlacademy.ru/htmlcss/24/user/859219).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Шершнев](https://htmlacademy.ru/profile/shv_sergey).
 
 ---
 
