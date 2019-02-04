@@ -71,8 +71,24 @@
 
 				<article class="slider">
 					<h3 class="visually-hidden">Слайдер</h3>
-					<!-- Стрелки слайдера -->
-					<ul class="slides">
+
+					<ul class="slider-toogle">
+						<li class="slider-toogle-button">
+							<input class="visually-hidden slider-toogle-input" type="radio" name="slider-toogle" id="slider-button-1" checked>
+							<label for="slider-button-1"></label>
+						</li>
+						<li class="slider-toogle-button">
+							<input class="visually-hidden slider-toogle-input" type="radio" name="slider-toogle" id="slider-button-2">
+							<label for="slider-button-2"></label>
+						</li>
+					</ul>
+
+					<div clas="slider-arrows">
+							<label class="visually-hidden slider-left-arrow" for="slider-button-1">Left</label>
+							<label class="visually-hidden slider-right-arrow" for="slider-button-2">Right</label>
+					</div>
+
+					<ul class="slider-content">
 						<li class="slide">
 							<b>Перфораторы</b>
 							<p>Настоящие мужские игрушки</p>
@@ -218,8 +234,23 @@
 					Хороший интернет-магазин отличается от плохого не только ценами!<br>
 					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 				</p>
-				<!-- Кнопки переключателя -->
-				<ul class="services-list">
+
+				<ul class="services-toogle">
+					<li class="services-toogle-button">
+						<input class="visually-hidden services-toogle-input" type="radio" name="services-toogle" id="services-button-1" checked>
+						<label for="services-button-1">Доставка</label>
+					</li>
+					<li class="services-toogle-button">
+						<input class="visually-hidden services-toogle-input" type="radio" name="services-toogle" id="services-button-2">
+						<label for="services-button-2">Гарантия</label>
+					</li>
+					<li class="services-toogle-button">
+						<input class="visually-hidden services-toogle-input" type="radio" name="services-toogle" id="services-button-3">
+						<label for="services-button-3">Кредит</label>
+					</li>
+				</ul>
+
+				<ul class="services-content">
 					<li class="services-delivery">
 						<h3>Доставка</h3>
 						<p>

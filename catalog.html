@@ -65,15 +65,21 @@
 
 			<section class="filters">
 				<h2 class="section-title">Фильтр:</h2>
-				<div class="price-filter">
-					<b>Цена:</b>
-				</div>
 
 				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
 					<fieldset>
-						<legend>
-							<b>Производители:</b>
-						</legend>
+						<legend>Цена:</legend>
+						<label class="price-min">
+							<input name="price" type="text" value="0">
+						</label>
+						<span>—</span>
+						<label class="price-max">
+							<input name="price" type="text" value="30000">
+						</label>
+					</fieldset>
+
+					<fieldset>
+						<legend>Производители:</legend>
 						<ul class="manufacturers-filter">
 							<li class="filter-option">
 								<input class="visually-hidden filter-input filter-input-chekbox" type="checkbox" name="bosch" id="filter-bosch" checked>
@@ -97,13 +103,12 @@
 							</li>
 						</ul>
 					</fieldset>
+
 					<fieldset>
-						<legend>
-							<b>Питание:</b>
-						</legend>
+						<legend>Питание:</legend>
 						<ul class="supplies-filter">
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="supplies" value="cordless" id="filter-cordless">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="supplies" value="cordless" id="filter-cordless" checked>
 								<label for="filter-cordless">Аккумуляторные</label>
 							</li>
 							<li class="filter-option">
@@ -118,7 +123,7 @@
 
 			<section class="sorting">
 				<h2 class="section-title">Сортировка:</h2>
-				<ul class="sorting-list">
+				<ul class="sorting-options">
 					<li><a class="active-sorting">По цене</a></li>
 					<li><a href="#">По типу</a></li>
 					<li><a href="#">По функционалу</a></li>
