@@ -10,7 +10,18 @@ body {
   background-color: #ffffff;
 }
 
-h1, h2 {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+
+  clip: rect(0 0 0 0);
+}
+
+.main-content h1,
+.main-content h2 {
   font-family: Cuprum, Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -19,17 +30,24 @@ h1, h2 {
   color: #000000;
 }
 
-.catalog-page h1 {
+.main-content h1 {
   color: #32425c;
 
   background-color: #f2f6f8;
+}
+
+.popular-items h2,
+.popular-manufacturers h2 {
+  color: #32425c;
+
+  background-color: #f9f5f0;
 }
 
 .filters h2,
 .sorting h2  {
   font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
-  line-height: 1.38;
+  line-height: 18px;
   color: #000000;
 }
 
@@ -87,10 +105,6 @@ h1, h2 {
   border: none;
 }
 
-.header-top input::placeholder {
-  opacity: 1;
-}
-
 .header-top input:hover,
 .bookmarks:hover,
 .cart:hover {
@@ -101,6 +115,10 @@ h1, h2 {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.header-top input::placeholder {
+  color: #ffffff;
 }
 
 .bookmarks:active,
@@ -196,7 +214,7 @@ h1, h2 {
 
 .orders-link a:active,
 .profile-link a:active {
-  color: rgba(50, 66, 92, 0.3);;
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .header-menu {
@@ -226,9 +244,11 @@ h1, h2 {
 }
 
 .breadcrumbs a {
-  color: #000000;
+  line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
+  color: #000000;
+
 }
 
 .filter fieldset {
@@ -256,6 +276,14 @@ h1, h2 {
   background-color: #ffffff;
 
   border: 1px solid #e5e5e5;
+}
+
+.filter-button:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.filter-button:active {
+  border: 1px solid #ee3643;
 }
 
 .sorting {
@@ -320,32 +348,39 @@ h1, h2 {
   border: 3px solid #63a63e;
 }
 
-.buy:hover {
+.catalog-item-actions .buy:hover {
   background-color: #5fbb2d;
 }
 
-.to-bookmarks:hover {
+.catalog-item-actions .to-bookmarks:hover {
   border: 3px solid #32425c;
 }
 
-.buy:active {
+.catalog-item-actions .buy:active {
   background-color: #518534;
 }
 
-.to-bookmarks:active {
+.catalog-item-actions .to-bookmarks:active {
   opacity: 0.3;
 }
 
-.catalog-items b {
+.catalog-item-old-price {
   font-family: PT Sans, Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+  text-decoration: line-through;
   color: #999999;
 }
 
-.catalog-item-old-price {
-  text-decoration: line-through;
+.catalog-item-price {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #ee3643;
 }
 
 .pagination-list {
@@ -436,14 +471,9 @@ h1, h2 {
   text-decoration: underline;
 }
 
-.footer-menu-top a:active {
-  text-decoration: none;
-  color: rgba(241, 245, 247, 0.5);
-}
-
+.footer-menu-top a:active,
 .footer-menu-bottom a:active {
-  text-decoration: none;
-  color: rgba(255, 209, 128, 0.5);
+  opacity: 0.5;
 }
 
 .footer-bottom {
@@ -475,7 +505,6 @@ h1, h2 {
 
 .footer-feedback a:active,
 .footer-developer a:active {
-  text-decoration: none;
   color: #ee3643;
 }
 
@@ -508,9 +537,9 @@ h1, h2 {
 }
 
 
-.modal-feedback input:placeholder,
-.modal-feedback textarea:placeholder {
-  color: #a9a9a9;
+.modal-feedback input::placeholder,
+.modal-feedback textarea::placeholder {
+  color: #999999;
 }
 
 .modal-item-added p {
