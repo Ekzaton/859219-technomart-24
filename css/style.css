@@ -36,11 +36,8 @@ body {
   background-color: #f2f6f8;
 }
 
-.popular-items h2,
-.popular-manufacturers h2 {
+.popular-header h2 {
   color: #32425c;
-
-  background-color: #f9f5f0;
 }
 
 .filters h2,
@@ -55,6 +52,14 @@ body {
   background-color: #f7f3ec;
 }
 
+.category h3 {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
 .catalog-items h3 {
   font-family: PT Sans, Arial, sans-serif;
   font-size: 18px;
@@ -62,6 +67,15 @@ body {
   font-weight: bold;
   text-align: center;
   color: #000000;
+}
+
+.services-content h3 {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #32425c;
 }
 
 .main-header li,
@@ -239,16 +253,136 @@ body {
   background-color: #1d2739;
 }
 
+.category-materials {
+  background-color: #ffbf47;
+}
+
+.category-tools {
+  background-color: #3bbce3;
+}
+
+.category-technics {
+  background-color: #dc91d8;
+}
+
+.category-discounts {
+  background-color: #8ed78f;
+}
+
+.category-delivery {
+  background-color: #ffc047;
+}
+
+.category-button {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.category-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.category-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider li,
+.manufacturers li,
+.catalog-items li,
+.services li,
+.filter li,
+.sorting li {
+  list-style: none;
+}
+
+.slider-content .slider-1 {
+  background: url("../img/slider-1.jpg") no-repeat;
+}
+
+.slider-content .slider-2 {
+  background: url("../img/slider-2.jpg") no-repeat;
+}
+
+.slider-content b {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.slider-content p {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.catalog-items li,
+.manufacturers li {
+  text-align: center;
+
+  border: 1px solid #e5e5e5;
+}
+
+.popular-header {
+  background-color: #f9f5f0;
+}
+
+.services {
+  background-color: #f4f7f9;
+}
+
+.services-toogle-button label {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.services-toogle-button label:hover {
+  background-color:  #293449;
+}
+
+.services-toogle-button input:checked + label {
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
 .breadcrumbs {
   list-style: none;
 }
 
 .breadcrumbs a {
   line-height: 18px;
+
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
 
+}
+
+.price-slider {
+  background-color: #f7f3ec;
+}
+
+.price-min,
+.price-max {
+  background-color: #f7f3ec;
+
+  border: none;
 }
 
 .filter fieldset {
@@ -264,10 +398,12 @@ body {
   color: #000000;
 }
 
-.filter li,
-.sorting li,
-.catalog-items li {
-  list-style: none;
+.filter input[type="text"] {
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
 }
 
 .filter-button {
@@ -319,12 +455,6 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-}
-
-.catalog-items li {
-  text-align: center;
-
-  border: 1px solid #e5e5e5;
 }
 
 .catalog-item-actions a {
