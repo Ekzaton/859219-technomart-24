@@ -20,7 +20,7 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.page-title h1,
+.catalog-page h1,
 .main-content h2 {
   font-family: Cuprum, Arial, sans-serif;
   font-size: 30px;
@@ -30,8 +30,10 @@ body {
   color: #000000;
 }
 
-.page-title h1 {
+.catalog-page h1 {
   color: #32425c;
+
+  background-color: #f2f6f8;
 }
 
 .popular-header h2 {
@@ -39,14 +41,14 @@ body {
 }
 
 .sorting h2,
-.filters-title h2 {
+.filters h2 {
   font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
 }
 
- .filters-title h2 {
+ .filters h2 {
   background-color: #f7f3ec;
 }
 
@@ -377,10 +379,6 @@ a.profile-link {
 
 }
 
-.page-title {
-  background-color: #f2f6f8;
-}
-
 .price-slider {
   background-color: #f7f3ec;
 }
@@ -701,15 +699,12 @@ a.profile-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.header-top-wrapper {
   width: 100%;
 }
 
-.header-top-wrapper .container {
+.header-top .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   background-color: #293449;
 }
@@ -719,28 +714,26 @@ a.profile-link {
 }
 
 .search-form {
-  width: 270px;
+  margin: 0;
 }
 
 .ordering-menu {
   width: 450px;
   margin: 0;
   padding: 0;
+  margin-left: auto;
 }
 
 .header-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.header-bottom-wrapper {
   width: 100%;
 }
 
-.header-bottom-wrapper .container {
+.header-bottom .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 46px;
   padding-bottom: 60px;
@@ -766,7 +759,7 @@ a.profile-link {
   width: 281px;
   margin: 0;
   padding: 0;
-  margin-left: 69px;
+  margin-left: auto;
 }
 
 .site-menu {
@@ -778,12 +771,12 @@ a.profile-link {
 
 .company-contacts {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-bottom: 86px;
 }
 
 .company {
-  width: 519px;
+  width: 520px;
 }
 
 .contacts {
@@ -794,31 +787,38 @@ a.profile-link {
   margin: 0;
 }
 
-.filters-sorting-catalog {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
 }
 
-.page-title {
+.catalog-page h1 {
   width: 100%;
-  order: 0;
+  margin: 0;
   margin-bottom: 20px;
 }
 
-.filters-title {
-  width: 220px;
-  order: 1;
+.filters-sorting-catalog {
+  display: flex;
+  justify-content: space-between;
 }
 
-.filters-title h2 {
+.sorting-catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-left: 20px;
+}
+
+.filters h2 {
+  width: 220px;
   margin: 0;
   margin-bottom: 20px;
 }
 
 .filters {
   width: 220px;
-  order: 3;
 }
 
 .filter fieldset {
@@ -832,8 +832,8 @@ a.profile-link {
 }
 
 .span{
-  margin-left: 6px;
-  margin-right: 6px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .manufacturers-filter,
@@ -844,10 +844,13 @@ a.profile-link {
 
 .sorting {
   width: 700px;
-  order: 2;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
+}
+
+.sorting h2 {
+  margin: 0;
 }
 
 .sorting-options {
@@ -857,10 +860,7 @@ a.profile-link {
 
 .catalog {
   width: 700px;
-  order: 4;
-
   margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 .catalog-items {
@@ -888,15 +888,12 @@ a.profile-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footer-top-wrapper {
   width: 100%;
 }
 
-.footer-top-wrapper .container {
+.footer-top .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   background-color: #32425c;
 }
@@ -913,10 +910,6 @@ a.profile-link {
   margin: 0;
 }
 
-.footer-menu {
-  margin-left: 65px;
-}
-
 .footer-menu-top {
   margin: 0;
   padding: 0;
@@ -931,15 +924,12 @@ a.profile-link {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.footer-bottom-wrapper {
   width: 100%;
 }
 
-.footer-bottom-wrapper .container {
+.footer-bottom .container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   background-color: #293449;
 }
@@ -956,7 +946,6 @@ a.profile-link {
   margin-left: 162px;
 }
 
-
 .footer-feedback {
   width: 135px;
   margin: 0;
@@ -966,5 +955,6 @@ a.profile-link {
 .footer-developer {
   width: 96px;
   margin: 0;
-  margin-left: 53px;
+  margin-left: auto;
+  margin-right: 15px;
 }
