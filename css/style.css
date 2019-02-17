@@ -296,8 +296,8 @@ a.profile-link {
 }
 
 .slider li,
-.manufacturers li,
-.catalog-items li,
+.manufacturer,
+.catalog-item,
 .services li,
 .filter li,
 .sorting li {
@@ -328,14 +328,14 @@ a.profile-link {
   color: #ffffff;
 }
 
-.catalog-items li,
-.manufacturers li {
+.catalog-item,
+.manufacturer {
   text-align: center;
 
   border: 1px solid #e5e5e5;
 }
 
-.manufacturers li:hover {
+.manufacturer:active {
   opacity: 0.3;
 }
 
@@ -725,12 +725,15 @@ a.profile-link {
   margin-left: auto;
 }
 
+.header-bottom {
+  padding-top: 46px;
+  padding-bottom: 60px;
+}
+
 .header-bottom .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 46px;
-  padding-bottom: 60px;
 
   background-color: #f4f7f9;
 }
@@ -768,15 +771,18 @@ a.profile-link {
   justify-content: space-between;
   flex-wrap: wrap;
 
-margin-bottom: 53px;
+  margin-bottom: 53px;
 }
 
 .promos-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .promos-bottom {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -784,27 +790,16 @@ margin-bottom: 53px;
 .promos-bottom-right {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .category {
   width: 300px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-}
-
-.promos-top .category:last-child,
-.promos-bottom-right .category  {
-  margin-right: 0;
-}
-
-.promos-bottom-right .category:last-child {
-  margin-bottom: 0;
 }
 
 .slider {
   width: 620px;
-  margin-right: 20px;
 }
 
 .slider-toggle,
@@ -826,8 +821,9 @@ margin-bottom: 53px;
 }
 
 .manufacturers {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 
   margin: 0;
@@ -837,23 +833,25 @@ margin-bottom: 53px;
 
 .manufacturer {
   width: 220px;
-  margin-right: auto;
   margin-bottom: 20px;
 }
 
-.manufacturer:nth-child(4n) {
-    margin-right: 0;
-}
-
 .services {
+  width: 100%;
   margin-bottom: 80px;
 }
 
-.services-wrapper .container {
+.services .container {
   background-color: #f4f7f9;
 }
 
 .services h2 {
+  margin: 0;
+}
+
+.services p {
+  width: 400px;
+  display: inline-block;
   margin: 0;
 }
 
@@ -878,6 +876,24 @@ margin-bottom: 53px;
 
 .services-description h3 {
   margin: 0
+}
+
+.services-delivery p {
+  width: 275px;
+  display: inline-block;
+  margin: 0;
+}
+
+.services-warranty p {
+  width: 379px;
+  display: inline-block;
+  margin: 0;
+}
+
+.services-credit p {
+  width: 279px;
+  display: inline-block;
+  margin: 0;
 }
 
 .company-contacts {
@@ -983,6 +999,7 @@ margin-bottom: 53px;
 }
 
 .catalog-items {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -1020,7 +1037,7 @@ margin-bottom: 53px;
   margin: 0;
 }
 
-.about-item-wrapper .container {
+.about-item .container {
   background-color: #f4f7f9;
 }
 
