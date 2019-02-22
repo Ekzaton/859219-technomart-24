@@ -469,9 +469,9 @@ input[type="radio"].visually-hidden {
 }
 
 .login-link:hover,
+.login-link:focus,
 .registration-link:hover,
-.login-link:hover,
-.registration-link:hover {
+.registration-link:focus {
   color: #ee3643;
 }
 
@@ -703,7 +703,8 @@ a.profile-link {
   color: #ffffff;
 }
 
-.category-button:hover {
+.category-button:hover,
+.category-button:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -856,7 +857,8 @@ a.profile-link {
   background-color: #32425c;
 }
 
-.services-toggle-button label:hover {
+.services-toggle-button label:hover,
+.services-toggle-button label:focus {
   background-color:  #293449;
 }
 
@@ -1189,7 +1191,8 @@ a.profile-link {
   border-radius: 3px;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
   border: 1px solid #bdc6ca;
 }
 
@@ -1239,7 +1242,8 @@ a.profile-link {
   border-bottom: none;
 }
 
-.not-selected:hover {
+.not-selected:hover,
+.not-selected:focus {
   color: rgba(0, 0, 0, 1);
 
   border-bottom: 1px solid #ee3643;
@@ -1283,7 +1287,8 @@ a.profile-link {
   font-size: 16px;
 }
 
-.catalog-item:hover  {
+.catalog-item:hover,
+.catalog-item:focus  {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -1337,6 +1342,7 @@ a.profile-link {
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
   border-radius:3px;
+  color: #ffffff;
 
 }
 
@@ -1350,15 +1356,18 @@ a.profile-link {
   display: none;
 }
 
-.catalog-item:hover .catalog-item-actions {
+.catalog-item:hover .catalog-item-actions,
+.catalog-item:focus .catalog-item-actions {
   display: block;
 }
 
-.catalog-item-actions .buy:hover {
+.catalog-item-actions .buy:hover,
+.catalog-item-actions .buy:focus {
   background-color: #5fbb2d;
 }
 
-.catalog-item-actions .bookmark:hover {
+.catalog-item-actions .bookmark:hover,
+.catalog-item-actions .bookmark:focus {
   border: 3px solid #32425c;
 }
 
