@@ -14,7 +14,7 @@
 			<div class="header-top">
 				<div class="container">
 					<a class="header-logo">
-						<img src="img/logo-technomart.svg" alt="Логотип интернет-магазина «Техномарт»" width="111" height="18">
+						<img src="img/logo-technomart.svg" alt="Логотип интернет-магазина «Техномарт»" width="110" height="18">
 					</a>
 					<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
 						<input type="search" name="search" placeholder="Поиск:">
@@ -125,49 +125,51 @@
 					<li class="catalog-item">
 						<div class="catalog-item-actions">
 							<a class="buy" href="#">Купить</a>
-							<a class="to-bookmarks" href="#">В закладки</a>
+							<a class="bookmark" href="#">В закладки</a>
 						</div>
-						<p class="catalog-item-image">
+						<div class="catalog-item-image">
 							<img src="img/perforator-1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
-						</p>
+						</div>
 						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
-						<p class="catalog-item-old-price">32500 Р.</p>
-						<a class="catalog-item-price" href="#">25500 Р.</a>
+						<div class="catalog-item-old-price">32500 Р.</div>
+						<div class="catalog-item-price"><a href="#">25500 Р.</a></div>
 					</li>
 					<li class="catalog-item">
 						<div class="catalog-item-actions">
 							<a class="buy" href="#">Купить</a>
-							<a class="to-bookmarks" href="#">В закладки</a>
+							<a class="bookmark" href="#">В закладки</a>
 						</div>
-						<p class="catalog-item-image">
+						<div class="catalog-item-image">
 							<img src="img/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
-						</p>
+						</div>
 						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
-						<p class="catalog-item-old-price">22500 Р.</p>
-						<a class="catalog-item-price" href="#">15500 Р.</a>
+						<div class="catalog-item-old-price">22500 Р.</div>
+						<div class="catalog-item-price"><a href="#">15500 Р.</a></div>
 					</li>
 					<li class="catalog-item">
 						<div class="catalog-item-actions">
 							<a class="buy" href="#">Купить</a>
-							<a class="to-bookmarks" href="#">В закладки</a>
+							<a class="bookmark" href="#">В закладки</a>
 						</div>
-						<p class="catalog-item-image">
+						<div class="catalog-item-image">
 							<img src="img/perforator-3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
-						</p>
+						</div>
 						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
-						<p class="catalog-item-old-price">30500 Р.</p>
-						<a class="catalog-item-price" href="#">25500 Р.</a>
+						<div class="catalog-item-old-price">30500 Р.</div>
+						<div class="catalog-item-price"><a href="#">25500 Р.</a></div>
 					</li>
 					<li class="catalog-item">
+						<div class="new-item-flag">новинка</div>
 						<div class="catalog-item-actions">
 							<a class="buy" href="#">Купить</a>
-							<a class="to-bookmarks" href="#">В закладки</a>
+							<a class="bookmark" href="#">В закладки</a>
 						</div>
-						<p class="catalog-item-image">
+						<div class="catalog-item-image">
 							<img src="img/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
-						</p>
+						</div>
 						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
-						<a class="catalog-item-price" href="#">12500 Р.</a>
+						<div class="catalog-item-old-price"></div>
+						<div class="catalog-item-price"><a href="#">12500 Р.</a></div>
 					</li>
 				</ul>
 			</section>
@@ -265,10 +267,10 @@
 					<h2>Компания «Техномарт»</h2>
 					<p>
 						Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-						строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
+						строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
 					</p>
 					<p>
-						Мы можем доставить ваш товар в самые отдаленные точки России!
+						Мы можем доставить ваш товар в самые отдаленные точки России!<br>
 						Техномарт работает со многими транспортными компаниями:
 					</p>
 					<ul class="partners-list">
@@ -295,9 +297,9 @@
 				<div class="container">
 					<div class="footer-logo-contacts">
 						<a class="footer-logo">
-							<img src="img/logo-technomart.svg" alt="Логотип «Техномарт»" width="137" height="22">
+							<img src="img/logo-technomart.svg" alt="Логотип «Техномарт»" width="138" height="23">
 						</a>
-						<p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
+						<p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
 					</div>
 					<div class="footer-menu">
 						<ul class="footer-menu-top">
@@ -318,11 +320,23 @@
 			</div>
 			<div class="footer-bottom">
 				<div class="container">
-					<p class="footer-copyright">© 2010-2019 Компания «Техномарт»<br>Все права защищены</p>
+					<p class="footer-copyright">© 2010-2019 Компания «Техномарт» Все права защищены</p>
 					<ul class="footer-social">
-						<li><a class="social-button social-vk" href="#">Вконтакте</a></li>
-						<li><a class="social-button social-fb" href="#">Фейсбук</a></li>
-						<li><a class="social-button social-ig" href="#">Инстаграм</a></li>
+						<li>
+							<a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span>
+								<img src="img/icon-vk.svg" alt="«Техномарт» в ВК" width="26" height="15">
+							</a>
+						</li>
+						<li>
+							<a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
+								<img src="img/icon-fb.svg" alt="«Техномарт» в FB" width="12" height="22">
+							</a>
+						</li>
+						<li>
+							<a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
+								<img src="img/icon-insta.svg" alt="«Техномарт» в Instagram" width="21" height="21">
+							</a>
+						</li>
 					</ul>
 					<p class="footer-feedback">Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 					<p class="footer-developer">Разработано — <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
@@ -341,20 +355,22 @@
 		<section class="modal modal-feedback">
 			<h2 class="visually-hidden">Обратная связь</h2>
 			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-				<p>
-					<label for="user-name">Ваше имя:</label>
-					<input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-				</p>
-				<p>
-					<label for="user-email">Ваш e-mail:</label>
-					<input id="user-email" type="email" name="email" placeholder="email@example.com">
-				</p>
-				<p>
-					<label for="comment-field">Текст письма:</label>
-					<textarea id="comment-field" name ="comment" placeholder="В свободной форме"></textarea>
-				</p>
+				<div class="modal-top">
+					<div>
+						<label for="user-name">Ваше имя:</label>
+						<input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+					</div>
+					<div>
+						<label for="user-email">Ваш e-mail:</label>
+						<input id="user-email" type="email" name="email" placeholder="email@example.com">
+					</div>
+					<div>
+						<label for="comment-field">Текст письма:</label>
+						<textarea id="comment-field" name ="comment" placeholder="В свободной форме"></textarea>
+					</div>
+				</div>
 				<div class="modal-bottom">
-					<button class="button" type="submit">Отправить</button>
+					<button class="button modal-button" type="submit">Отправить</button>
 				</div>
 			</form>
 			<button class="modal-close" type="button">Закрыть</button>
