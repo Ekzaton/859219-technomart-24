@@ -1515,6 +1515,7 @@ a.profile-link {
 
   top: -1px;
   right: -1px;
+  z-index: 20;
 
   width: 60px;
   height: 60px;
@@ -1527,15 +1528,16 @@ a.profile-link {
 
 .catalog-item-actions {
   position: absolute;
+
   top: 0;
   left: 0;
+  z-index: 10;
 
   width: 218px;
   height: 88px;
   padding: 40px 0;
 
   background-color: #ffffff;
-  z-index: 10;
 }
 
 .catalog-item-actions a {
