@@ -37,7 +37,7 @@
 						<li><a class="login-link" href="#">Войти</a></li>
 						<li><a class="registration-link" href="#">Регистрация</a></li>
 					</ul>
-					<nav>
+					<nav class="header-menu">
 						<ul class="site-menu">
 							<li><a>Главная</a></li>
 							<li><a href="#">Компания</a></li>
@@ -60,6 +60,7 @@
 				<h2 class="visually-hidden">Промо-блок</h2>
 				<div class="promos-top">
 					<div class="category category-materials">
+						<div class="new-category-flag">новинка</div>
 						<h3>Материалы</h3>
 						<a class="category-button" href="#">на любой вкус</a>
 					</div>
@@ -76,27 +77,23 @@
 				<div class="promos-bottom">
 					<article class="slider">
 						<h3 class="visually-hidden">Слайдер</h3>
-						<ul class="slider-toggle">
-							<li class="slider-toggle-button">
-								<input class="visually-hidden slider-toggle-input" type="radio" name="slider-toggle" id="slider-button-1" checked>
-								<label for="slider-button-1"></label>
-							</li>
-							<li class="slider-toggle-button">
-								<input class="visually-hidden slider-toggle-input" type="radio" name="slider-toggle" id="slider-button-2">
-								<label for="slider-button-2"></label>
-							</li>
-						</ul>
+						<input class="visually-hidden" type="radio" name="slider-radio" id="slider-radio-1">
+						<input class="visually-hidden" type="radio" name="slider-radio" id="slider-radio-2" checked>
 						<div class="slider-arrows">
-								<label class="visually-hidden slider-left-arrow" for="slider-button-1">Left</label>
-								<label class="visually-hidden slider-right-arrow" for="slider-button-2">Right</label>
+							<label class="slider-left-arrow" for="slider-radio-1">Слайд влево</label>
+							<label class="slider-right-arrow" for="slider-radio-2">Слайд право</label>
+						</div>
+						<div class="slider-controls">
+							<label class="slider-radio-slide-1" for="slider-radio-1">Первый слайд</label>
+          		<label class="slider-radio-slide-2" for="slider-radio-2">Второй слайд</label>
 						</div>
 						<ul class="slider-content">
-							<li class="slider-1">
+							<li class="slide">
 								<b>Перфораторы</b>
 								<p>Настоящие мужские игрушки</p>
 								<a class="button" href="catalog.html">Открыть каталог</a>
 							</li>
-							<li class="slider-2">
+							<li class="slide">
 								<b>Дрели</b>
 								<p>Соседям на радость!</p>
 								<a class="button" href="catalog.html">Открыть каталог</a>
@@ -127,11 +124,9 @@
 							<a class="buy" href="#">Купить</a>
 							<a class="bookmark" href="#">В закладки</a>
 						</div>
-						<div class="catalog-item-image">
-							<img src="img/perforator-1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
-						</div>
+						<img src="img/perforator-1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">
 						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
-						<div class="catalog-item-old-price">32500 Р.</div>
+						<p class="catalog-item-old-price">32500 Р.</p>
 						<div class="catalog-item-price"><a href="#">25500 Р.</a></div>
 					</li>
 					<li class="catalog-item">
@@ -139,11 +134,9 @@
 							<a class="buy" href="#">Купить</a>
 							<a class="bookmark" href="#">В закладки</a>
 						</div>
-						<div class="catalog-item-image">
-							<img src="img/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
-						</div>
+						<img src="img/perforator-2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">
 						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
-						<div class="catalog-item-old-price">22500 Р.</div>
+						<p class="catalog-item-old-price">22500 Р.</p>
 						<div class="catalog-item-price"><a href="#">15500 Р.</a></div>
 					</li>
 					<li class="catalog-item">
@@ -151,11 +144,9 @@
 							<a class="buy" href="#">Купить</a>
 							<a class="bookmark" href="#">В закладки</a>
 						</div>
-						<div class="catalog-item-image">
-							<img src="img/perforator-3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
-						</div>
+						<img src="img/perforator-3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">
 						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
-						<div class="catalog-item-old-price">30500 Р.</div>
+						<p class="catalog-item-old-price">30500 Р.</p>
 						<div class="catalog-item-price"><a href="#">25500 Р.</a></div>
 					</li>
 					<li class="catalog-item">
@@ -164,11 +155,9 @@
 							<a class="buy" href="#">Купить</a>
 							<a class="bookmark" href="#">В закладки</a>
 						</div>
-						<div class="catalog-item-image">
-							<img src="img/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
-						</div>
+						<img src="img/perforator-4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">
 						<h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
-						<div class="catalog-item-old-price"></div>
+						<p class="catalog-item-old-price"></p>
 						<div class="catalog-item-price"><a href="#">12500 Р.</a></div>
 					</li>
 				</ul>
@@ -215,17 +204,17 @@
 						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 					</p>
 					<div class="services-content">
-						<ul class="services-toggle">
-							<li class="services-toggle-button">
-								<input class="visually-hidden services-toggle-input" type="radio" name="services-toggle" id="services-button-1" checked>
+						<ul class="services-slider">
+							<li class="services-slider-button">
+								<input class="visually-hidden" type="radio" name="services-slider-button" id="services-button-1" checked>
 								<label for="services-button-1">Доставка</label>
 							</li>
-							<li class="services-toggle-button">
-								<input class="visually-hidden services-toggle-input" type="radio" name="services-toggle" id="services-button-2">
+							<li class="services-slider-button">
+								<input class="visually-hidden" type="radio" name="services-slider-button" id="services-button-2">
 								<label for="services-button-2">Гарантия</label>
 							</li>
-							<li class="services-toggle-button">
-								<input class="visually-hidden services-toggle-input" type="radio" name="services-toggle" id="services-button-3">
+							<li class="services-slider-button">
+								<input class="visually-hidden" type="radio" name="services-slider-button" id="services-button-3">
 								<label for="services-button-3">Кредит</label>
 							</li>
 						</ul>
@@ -323,19 +312,13 @@
 					<p class="footer-copyright">© 2010-2019 Компания «Техномарт» Все права защищены</p>
 					<ul class="footer-social">
 						<li>
-							<a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span>
-								<img src="img/icon-vk.svg" alt="«Техномарт» в ВК" width="26" height="15">
-							</a>
+							<a class="social-button social-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
 						</li>
 						<li>
-							<a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span>
-								<img src="img/icon-fb.svg" alt="«Техномарт» в FB" width="12" height="22">
-							</a>
+							<a class="social-button social-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
 						</li>
 						<li>
-							<a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span>
-								<img src="img/icon-insta.svg" alt="«Техномарт» в Instagram" width="21" height="21">
-							</a>
+							<a class="social-button social-insta" href="#"><span class="visually-hidden">Инстаграм</span></a>
 						</li>
 					</ul>
 					<p class="footer-feedback">Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
