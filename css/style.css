@@ -46,7 +46,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-/*УДаление подчеркивания у ссылок*/
+/*Удаление подчеркивания у ссылок*/
 
 .main-header a,
 .main-footer a,
@@ -1209,8 +1209,9 @@ a.cabinet-link {
 }
 
 .contacts .map {
-  display: block;
   margin: 31px 0 33px;
+
+  cursor: pointer;
 }
 
 .contacts img {
@@ -1689,6 +1690,11 @@ a.selected:focus {
   background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
+.catalog-item.new-flag::before {
+  top: -1px;
+  right: -1px;
+}
+
 .catalog-item {
   position: relative;
   display: flex;
@@ -2154,7 +2160,12 @@ a.selected:focus {
 /*Модальные окна*/
 
 .modal {
-  width: 620px;
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  z-index: 200;
 }
 
 .modal-top {
@@ -2162,7 +2173,9 @@ a.selected:focus {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  padding: 54px 80px 0;
+  padding: 47px 80px 0;
+
+  background-color: #ffffff;
 }
 
 .modal-bottom {
@@ -2174,11 +2187,79 @@ a.selected:focus {
   background-color: #f4f4f4;
 }
 
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: -3px;
+
+  width: 27px;
+  height: 4px;
+
+  background-color: #ee3643;
+  border-radius: 2px;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+/*Карта*/
+
+.modal-map {
+  display: none;
+
+  width: 940px;
+  height: 446px;
+  margin: -250px 0 0 -470px;
+}
+
+.modal-map iframe {
+  box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
+  border: none;
+}
+
+.modal-map .modal-close {
+  top: -9px;
+  right: -22px;
+}
+
 /*Окно обратной связи*/
 
 .modal-feedback,
 .modal-item-added {
-  box-shadow: inset 0 7px 0 0 #ee3643;
+  display: none;
+
+  box-sizing: border-box;
+
+  width: 620px;
+  margin: -250px 0 0 -310px;
+
+  border-top: 7px solid #ee3643;
+
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .modal-feedback label {
@@ -2207,7 +2288,7 @@ a.selected:focus {
   width: 460px;
   height: 114px;
   resize: none;
-  margin: 0 0 33px;
+  margin: 0 0 29px;
   padding: 10px 13px;
 }
 
