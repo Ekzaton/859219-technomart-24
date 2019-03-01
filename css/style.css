@@ -2602,8 +2602,7 @@ a.selected:focus
 {
     width: 96px;
     margin: 0;
-    margin-right: 15px;
-    margin-left: auto;
+    margin: 0 15px 0 auto;
 }
 
 .footer-feedback a,
