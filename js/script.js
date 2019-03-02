@@ -1,3 +1,20 @@
+/*Карта*/
+
+var linkMap = document.querySelector(".contacts .map");
+var map = document.querySelector(".modal-map");
+var closeMap = map.querySelector(".modal-close");
+
+linkMap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.add("modal-show");
+});
+
+closeMap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.remove("modal-show");
+  map.classList.remove("modal-error");
+});
+
 /*Обратная связь*/
 
 var linkFeedback = document.querySelector(".contacts .button");
@@ -50,6 +67,9 @@ window.addEventListener("keydown", function (evt) {
     if (feedback.classList.contains("modal-show")) {
       feedback.classList.remove("modal-show");
       feedback.classList.remove("modal-error");
+    }
+    else if (map.classList.contains("modal-show")) {
+      map.classList.remove("modal-show");
     }
   }
 });
