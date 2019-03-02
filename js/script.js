@@ -1,18 +1,35 @@
-/*Карта*/
+/*Товар добавлен*/
 
-var linkMap = document.querySelector(".contacts .map");
-var map = document.querySelector(".modal-map");
-var closeMap = map.querySelector(".modal-close");
+var linkAdded = document.querySelectorAll(".buy");
+var addded = document.querySelector(".modal-item-added");
+var closeAdded = addded.querySelector(".modal-close");
+var closeAddedButton = addded.querySelector(".catalog-button");
 
-linkMap.addEventListener("click", function (evt) {
+for (var i=0; i<linkAdded.length; i++)
+{
+  linkAdded[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    addded.classList.add("modal-show");
+  })
+};
+
+closeAdded.addEventListener("click", function (evt) {
   evt.preventDefault();
-  map.classList.add("modal-show");
+  addded.classList.remove("modal-show");
 });
 
-closeMap.addEventListener("click", function (evt) {
+closeAddedButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  map.classList.remove("modal-show");
-  map.classList.remove("modal-error");
+  addded.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (addded.classList.contains("modal-show")) {
+      addded.classList.remove("modal-show");
+    }
+  }
 });
 
 /*Обратная связь*/
@@ -46,6 +63,16 @@ closeFeedback.addEventListener("click", function (evt) {
   feedback.classList.remove("modal-error");
 });
 
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (feedback.classList.contains("modal-show")) {
+      feedback.classList.remove("modal-show");
+      feedback.classList.remove("modal-error");
+    }
+  }
+});
+
 form.addEventListener("submit", function (evt) {
   if (!username.value || !email.value || !comment.value) {
     evt.preventDefault();
@@ -61,14 +88,26 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
+/*Карта*/
+
+var linkMap = document.querySelector(".contacts .map");
+var map = document.querySelector(".modal-map");
+var closeMap = map.querySelector(".modal-close");
+
+linkMap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.add("modal-show");
+});
+
+closeMap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.remove("modal-show");
+});
+
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (feedback.classList.contains("modal-show")) {
-      feedback.classList.remove("modal-show");
-      feedback.classList.remove("modal-error");
-    }
-    else if (map.classList.contains("modal-show")) {
+    if (map.classList.contains("modal-show")) {
       map.classList.remove("modal-show");
     }
   }

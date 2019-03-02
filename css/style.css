@@ -2793,7 +2793,7 @@ a.selected:focus
     right: -22px;
 }
 
-/*Окно обратной связи*/
+/*Обратная связь*/
 
 .modal-feedback,
 .modal-item-added
@@ -2900,7 +2900,7 @@ a.selected:focus
     border: none;
 }
 
-/*Окно добавления товара в корзину*/
+/*Товар добавлен*/
 
 .modal-item-added p
 {
