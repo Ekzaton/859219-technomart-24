@@ -1471,9 +1471,9 @@ a.cabinet-link
 
 .contacts .map
 {
-    margin: 31px 0 33px;
+    display: block;
 
-    cursor: pointer;
+    margin: 31px 0 33px;
 }
 
 .contacts img
@@ -1735,7 +1735,6 @@ a.cabinet-link
 
 .filter legend
 {
-    font-family: PTSans, Arial, sans-serif;
     font-size: 17px;
     font-weight: bold;
     line-height: 30px;
@@ -2627,6 +2626,48 @@ a.selected:focus
     color: #ee3643;
 }
 
+/*Анимации*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 /*Модальные окна*/
 
 .modal
@@ -2635,6 +2676,20 @@ a.selected:focus
     z-index: 200;
     top: 50%;
     left: 50%;
+
+    display: none;
+}
+
+.modal-show
+{
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error
+{
+  animation: shake 0.6s;
 }
 
 .modal-top
@@ -2720,8 +2775,6 @@ a.selected:focus
 
 .modal-map
 {
-    display: none;
-
     width: 940px;
     height: 446px;
     margin: -250px 0 0 -470px;
@@ -2745,8 +2798,6 @@ a.selected:focus
 .modal-feedback,
 .modal-item-added
 {
-    display: none;
-
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 620px;
