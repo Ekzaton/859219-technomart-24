@@ -1,33 +1,33 @@
 /*Товар добавлен*/
 
 var linkAdded = document.querySelectorAll(".buy");
-var addded = document.querySelector(".modal-item-added");
-var closeAdded = addded.querySelector(".modal-close");
-var closeAddedButton = addded.querySelector(".catalog-button");
+var added = document.querySelector(".modal-item-added");
+var closeAdded = added.querySelector(".modal-close");
+var closeAddedButton = added.querySelector(".catalog-button");
 
 for (var i=0; i<linkAdded.length; i++)
 {
   linkAdded[i].addEventListener("click", function (evt) {
     evt.preventDefault();
-    addded.classList.add("modal-show");
+    added.classList.add("modal-show");
   })
 };
 
 closeAdded.addEventListener("click", function (evt) {
   evt.preventDefault();
-  addded.classList.remove("modal-show");
+  added.classList.remove("modal-show");
 });
 
 closeAddedButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  addded.classList.remove("modal-show");
+  added.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (addded.classList.contains("modal-show")) {
-      addded.classList.remove("modal-show");
+    if (added.classList.contains("modal-show")) {
+      added.classList.remove("modal-show");
     }
   }
 });
@@ -41,16 +41,6 @@ var form = feedback.querySelector(".feedback-form");
 var username = feedback.querySelector("[name=name]");
 var email = feedback.querySelector("[name=email]");
 var comment = feedback.querySelector("[name=comment]");
-
-var isStorageSupport = true;
-var storage = "";
-
-try {
-  storage = localStorage.getItem("username");
-}
-catch (err) {
-  isStorageSupport = false;
-}
 
 linkFeedback.addEventListener("click", function (evt) {
   evt.preventDefault();
