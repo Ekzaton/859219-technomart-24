@@ -5,8 +5,8 @@
 		<title>Интернет-магазин строительных материалов и инструментов для ремонта «Техномарт»</title>
 		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/normalize.min.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -76,11 +76,11 @@
 				<div class="promos-bottom">
 					<article class="slider">
 						<h3 class="visually-hidden">Слайдер</h3>
-						<input class="visually-hidden" type="radio" name="slider-radio" id="slider-radio-1">
-						<input class="visually-hidden" type="radio" name="slider-radio" id="slider-radio-2" checked>
+						<input class="input-slider-1 visually-hidden" type="radio" name="slider-radio" id="slider-radio-1">
+						<input class="input-slider-2 visually-hidden" type="radio" name="slider-radio" id="slider-radio-2" checked>
 						<div class="slider-arrows">
-							<label class="slider-left-arrow" for="slider-radio-1">Слайд влево</label>
-							<label class="slider-right-arrow" for="slider-radio-2">Слайд право</label>
+							<label class="slider-left-arrow" for="slider-radio-1" tabindex="0">Слайд влево</label>
+							<label class="slider-right-arrow" for="slider-radio-2" tabindex="0">Слайд право</label>
 						</div>
 						<ul class="slider-content">
 							<li class="slide">
@@ -95,8 +95,8 @@
 							</li>
 						</ul>
 						<div class="slider-controls">
-							<label class="slider-radio-slide-1" for="slider-radio-1">Первый слайд</label>
-          		<label class="slider-radio-slide-2" for="slider-radio-2">Второй слайд</label>
+							<label class="slider-radio-slide-1" for="slider-radio-1" tabindex="0">Первый слайд</label>
+          		<label class="slider-radio-slide-2" for="slider-radio-2" tabindex="0">Второй слайд</label>
 						</div>
 					</article>
 					<div class="promos-bottom-right">
@@ -201,18 +201,18 @@
 						Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
 					</p>
 					<div class="services-content">
-						<input class="visually-hidden" type="radio" name="services-button" id="services-button-1" checked>
-						<input class="visually-hidden" type="radio" name="services-button" id="services-button-2">
-						<input class="visually-hidden" type="radio" name="services-button" id="services-button-3">
+						<input class="input-service-1 visually-hidden" type="radio" name="services-button" id="services-button-1" checked>
+						<input class="input-service-2 visually-hidden" type="radio" name="services-button" id="services-button-2">
+						<input class="input-service-3 visually-hidden" type="radio" name="services-button" id="services-button-3">
 						<ul class="services-controls">
 							<li class="services-button">
-								<label for="services-button-1">Доставка</label>
+								<label class="service-button-1" for="services-button-1" tabindex="0">Доставка</label>
 							</li>
 							<li class="services-button">
-								<label for="services-button-2">Гарантия</label>
+								<label class="service-button-2" for="services-button-2" tabindex="0">Гарантия</label>
 							</li>
 							<li class="services-button">
-								<label for="services-button-3">Кредит</label>
+								<label class="service-button-3" for="services-button-3" tabindex="0">Кредит</label>
 							</li>
 						</ul>
 						<ul class="services-description">
@@ -368,6 +368,6 @@
 			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 
-		<script src="js/script.js"></script>
+		<script src="js/script.min.js"></script>
 	</body>
 </html>
