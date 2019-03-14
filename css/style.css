@@ -1657,6 +1657,8 @@ a.cabinet-link
 
 .price-slider
 {
+    position: relative;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1677,8 +1679,6 @@ a.cabinet-link
 
 .slider-range
 {
-    position: relative;
-
     width: 120px;
     height: 2px;
     margin: 0 20px;
@@ -1686,33 +1686,37 @@ a.cabinet-link
     background-color: #00ca74;
 }
 
-.slider-range::before
+.slider-button-left
 {
+    font-size: 0;
+
     position: absolute;
-    top: -9px;
-    left: -20px;
+    top: 30px;
+    left: 20px;
 
     width: 20px;
     height: 22px;
 
-    content: '';
     cursor: pointer;
 
+    border: none;
     background: url('../img/filter-button.svg');
 }
 
-.slider-range::after
+.slider-button-right
 {
+    font-size: 0;
+
     position: absolute;
-    top: -9px;
-    left: 120px;
+    top: 30px;
+    left: 160px;
 
     width: 20px;
     height: 22px;
 
-    content: '';
     cursor: pointer;
 
+    border: none;
     background: url('../img/filter-button.svg');
 }
 
