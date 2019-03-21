@@ -1,6 +1,6 @@
 # Личный проект «Техномарт»
 
-* Студент: [Сергей Зуев](https://htmlacademy.ru/profile/859219).
+* Студент: [Сергей Зуев](https://htmlacademy.ru/profile/ekzaton).
 * Наставник: [Сергей Шершнев](https://htmlacademy.ru/profile/shv_sergey).
 
 ---
